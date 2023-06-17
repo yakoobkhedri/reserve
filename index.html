@@ -1,0 +1,1266 @@
+<!doctype html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <title>صفحه اصلی</title>
+</head>
+
+<body>
+    <div id="overlay"></div>
+    <header class="d-flex align-items-center justify-content-center justify-content-lg-start gap-lg-5 gap-3 fw-bold border-bottom py-4 px-lg-5 px-2 bg-white">
+        <nav id="mobileMenu" class="position-fixed overflow-auto">
+            <div class="d-flex align-items-center justify-content-between p-4">
+                <img src="images/footerLogo.PNG" alt="logo" class="w-75">
+                <svg id="closeIcon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-x text-white" viewBox="0 0 16 16">
+                                                                                                    <path
+                                                                                                                        d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                                                                                </svg>
+            </div>
+            <ul class="list-unstyled p-0 fw-bold">
+                <li class="position-relative border-bottom border-top">
+                    <a class="d-flex justify-content-between px-4 py-3 align-items-center gap-1 text-white align-items-center">
+                        <span>خانه</span>
+
+                    </a>
+                </li>
+                <li class="position-relative border-bottom">
+                    <a class="d-flex justify-content-between px-4 py-3 align-items-center gap-1 text-white align-items-center">
+                        <span>معرفی
+                                                                                                                                            پزشک</span>
+
+                    </a>
+                </li>
+                <li class="position-relative border-bottom">
+                    <a class="d-flex justify-content-between px-4 py-3 align-items-center gap-1 text-white align-items-center">
+                        <span>تماس با
+                                                                                                                                            من</span>
+
+                    </a>
+                </li>
+                <li class="position-relative border-bottom">
+                    <a class="d-flex justify-content-between px-4 py-3 align-items-center gap-1 text-white align-items-center">
+                        <span>نوبت
+                                                                                                                                            دهی</span>
+
+                    </a>
+                </li>
+                <li class="position-relative border-bottom">
+                    <a class="d-flex justify-content-between px-4 py-3 align-items-center gap-1 text-white align-items-center">
+                        <span>خدمات
+                                                                                                                                            بهداشتی</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                                                                                                                            <path fill-rule="evenodd"
+                                                                                                                                                                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                                                                                                        </svg>
+                    </a>
+                    <div class="border-0 bg-primary">
+                        <a class="border-bottom border-top d-block py-3 px-5">
+                            <span>آیتم
+                                                                                                                                                                اول</span>
+                        </a>
+                        <a class="border-bottom d-block py-3 px-5">
+                            <span>آیتم
+                                                                                                                                                                دوم</span>
+                        </a>
+                        <a class="d-block py-3 px-5">
+                            <span>آیتم
+                                                                                                                                                                سوم</span>
+                        </a>
+                    </div>
+                </li>
+                <li class="position-relative border-bottom">
+                    <a class="d-flex justify-content-between px-4 py-3 align-items-center gap-1 text-white align-items-center">
+                        <span>خدمات
+                                                                                                                                            زیبایی</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                                                                                                                            <path fill-rule="evenodd"
+                                                                                                                                                                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                                                                                                        </svg>
+                    </a>
+                    <div class="border-0 bg-primary">
+                        <a class="border-bottom border-top d-block py-3 px-5">
+                            <span>آیتم
+                                                                                                                                                                اول</span>
+                        </a>
+                        <a class="border-bottom d-block py-3 px-5">
+                            <span>آیتم
+                                                                                                                                                                دوم</span>
+                        </a>
+                        <a class="d-block py-3 px-5">
+                            <span>آیتم
+                                                                                                                                                                سوم</span>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-text-right d-lg-none position-absolute" id="hamIcon" viewBox="0 0 16 16">
+                                                            <path fill-rule="evenodd"
+                                                                                d="M6 12.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-4-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm4-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-4-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z" />
+                                        </svg>
+        <a class="fs-4">TEST LOGO</a>
+        <ul class="desktopMenu d-lg-flex d-none align-items-center fs-6 gap-5 p-0 m-0 list-unstyled">
+            <li><a class="active">خانه</a></li>
+            <li><a>معرفی پزشک</a></li>
+            <li><a>تماس با من</a></li>
+            <li><a>نوبت دهی</a></li>
+            <li class="position-relative menudropdown">
+                <a class="d-flex gap-1 align-items-center">
+                    <span>خدمات
+                                                                                                                        بهداشتی</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                                                                                                        <path fill-rule="evenodd"
+                                                                                                                                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                                                                                    </svg>
+                </a>
+                <div class="position-absolute dropdown border-0">
+                    <a class="border-bottom border-end border-start border-top d-block py-2 px-3">
+                        <span>آیتم
+                                                                                                                                            اول</span>
+                    </a>
+                    <a class="border-bottom border-end border-start d-block py-2 px-3">
+                        <span>آیتم
+                                                                                                                                            دوم</span>
+                    </a>
+                    <a class="d-block border-end border-start border-bottom py-2 px-3">
+                        <span>آیتم
+                                                                                                                                            سوم</span>
+                    </a>
+                </div>
+            </li>
+            <li class="position-relative menudropdown">
+                <a class="d-flex gap-1 align-items-center">
+                    <span>خدمات
+                                                                                                                        زیبایی</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                                                                                                        <path fill-rule="evenodd"
+                                                                                                                                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                                                                                    </svg>
+                </a>
+                <div class="position-absolute dropdown border-0">
+                    <a class="border-bottom border-end border-start border-top d-block py-2 px-3">
+                        <span>آیتم
+                                                                                                                                            اول</span>
+                    </a>
+                    <a class="border-bottom border-end border-start d-block py-2 px-3">
+                        <span>آیتم
+                                                                                                                                            دوم</span>
+                    </a>
+                    <a class="d-block border-end border-start border-bottom py-2 px-3">
+                        <span>آیتم
+                                                                                                                                            سوم</span>
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </header>
+
+    <!-- banner -->
+
+    <section id="banner" class="d-flex align-items-center justify-content-md-around justify-content-center">
+        <div class="fw-bold mb-5 wow fadeInUp">
+            <h2 class="text-center text-md-end">رزرو نوبت پزشک</h2>
+            <h6 class="text-secondary mb-5 text-center text-md-end">
+                انتخاب زمان بندی و تاریخ خالی
+            </h6>
+            <a class="rounded-3 me-auto ms-auto me-md-0 py-1 w-75 fs-5 d-flex align-items-center justify-content-center text-white gap-4 reserveBtn">
+                <span>رزرو</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chevron-double-left border border-white rounded-circle" viewBox="0 0 16 16">
+                                                                                                    <path fill-rule="evenodd"
+                                                                                                                        d="M8.354 1.646a.5.5 0 0 1 0 .708L2.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                                                                                                    <path fill-rule="evenodd"
+                                                                                                                        d="M12.354 1.646a.5.5 0 0 1 0 .708L6.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                                                                                </svg>
+            </a>
+        </div>
+        <div></div>
+    </section>
+
+    <!-- services -->
+
+    <section id="services" class="fw-bold text-center py-5 wow fadeInUp">
+        <h1>به دنبال چه چیزی هستید؟</h1>
+        <div class="d-flex align-items-center flex-wrap justify-content-center mt-5 gap-4">
+            <div class="position-relative d-flex align-items-center justify-content-center overflow-hidden rounded-3 cardItem">
+                <img src="images/visit.jpg" alt="visit">
+                <div class="position-absolute d-flex align-items-center justify-content-center h-100 w-100 text-white top-0 bottom-0 end-0 start-0">
+                    <div>
+                        <h4>ویزیت پزشک
+                        </h4>
+                        <a class="rounded-3 w-75 py-2 px-2 mx-auto mt-3 fs-5 d-flex align-items-center justify-content-center text-white gap-4 reserveBtn">
+                            <span>رزرو
+                                                                                                                                                                کنید</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="position-relative d-flex align-items-center justify-content-center overflow-hidden rounded-3 cardItem">
+                <img src="images/images.jpg" alt="drogs">
+                <div class="position-absolute d-flex align-items-center justify-content-center h-100 w-100 text-white top-0 bottom-0 end-0 start-0">
+                    <div>
+                        <h4>خدمات
+                        </h4>
+                        <a class="rounded-3 w-75 py-2 px-5 mx-auto mt-3 fs-5 d-flex align-items-center justify-content-center text-white gap-4 reserveBtn3">
+                            <span>جستجو
+                                                                                                                                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="position-relative d-flex align-items-center justify-content-center overflow-hidden rounded-3 cardItem">
+                <img src="images/Untitled.jpg" alt="files">
+                <div class="position-absolute d-flex align-items-center justify-content-center h-100 w-100 text-white top-0 bottom-0 end-0 start-0">
+                    <div>
+                        <h4>پرونده پزشکی
+                        </h4>
+                        <a class="rounded-3 w-75 py-2 px-5 mx-auto mt-3 fs-5 d-flex align-items-center justify-content-center text-white gap-4 reserveBtn4">
+                            <span>بزودی</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- departemans -->
+
+    <section id="departemans" class="fw-bold text-center py-5 wow fadeInUp">
+        <h1>بخش ها</h1>
+        <p class="text-secondary mx-auto fs-5">
+            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
+        </p>
+        <!-- Swiper -->
+        <div class="swiper mySwiper py-5 w-75 mx-auto">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="position-relative mx-auto mb-4 rounded-circle specialShadow bg-white d-flex justify-content-center align-items-center">
+                        <img src="images/orology-removebg-preview.png" alt="orology">
+                        <span class="dot"></span>
+                    </div>
+                    <h5>اورولوژی</h5>
+                </div>
+                <div class="swiper-slide">
+                    <div class="position-relative mx-auto mb-4 rounded-circle specialShadow bg-white d-flex justify-content-center align-items-center">
+                        <img src="images/brain-removebg-preview.png" alt="niology">
+                        <span class="dot"></span>
+                    </div>
+                    <h5>نیئولوژی</h5>
+                </div>
+                <div class="swiper-slide">
+                    <div class="position-relative mx-auto mb-4 rounded-circle specialShadow bg-white d-flex justify-content-center align-items-center">
+                        <img src="images/dentist-removebg-preview.png" alt="dentist">
+                        <span class="dot"></span>
+                    </div>
+                    <h5>دندان پزشک</h5>
+                </div>
+                <div class="swiper-slide">
+                    <div class="position-relative mx-auto mb-4 rounded-circle specialShadow bg-white d-flex justify-content-center align-items-center">
+                        <img src="images/ortopedy-removebg-preview.png" alt="ortopedy">
+                        <span class="dot"></span>
+                    </div>
+                    <h5>ارتوپدی</h5>
+                </div>
+                <div class="swiper-slide">
+                    <div class="position-relative mx-auto mb-4 rounded-circle specialShadow bg-white d-flex justify-content-center align-items-center">
+                        <img src="images/heart-removebg-preview.png" alt="heart">
+                        <span class="dot"></span>
+                    </div>
+                    <h5>متخصص قلب</h5>
+                </div>
+                <div class="swiper-slide">
+                    <div class="position-relative mx-auto mb-4 rounded-circle specialShadow bg-white d-flex justify-content-center align-items-center">
+                        <img src="images/orology-removebg-preview.png" alt="orology">
+                        <span class="dot"></span>
+                    </div>
+                    <h5>اورولوژی</h5>
+                </div>
+                <div class="swiper-slide">
+                    <div class="position-relative mx-auto mb-4 rounded-circle specialShadow bg-white d-flex justify-content-center align-items-center">
+                        <img src="images/brain-removebg-preview.png" alt="niology">
+                        <span class="dot"></span>
+                    </div>
+                    <h5>نیئولوژی</h5>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <!-- reserve -->
+
+    <section id="reserve" class="p-4 p-lg-5 fw-bold wow fadeInUp">
+        <div class="row align-items-baseline">
+            <div class="col-lg-4">
+                <h1>رزرو نوبت پزشک</h1>
+                <h5 class="text-secondary">لورم ایپسوم متن ساختگی با تولید سادگی
+                </h5>
+                <p class="my-4">
+                    چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
+                </p>
+                <p>
+                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
+                </p>
+                <a class="rounded-3 w-25 mt-4 py-2 px-1 mt-3 fs-5 d-flex align-items-center justify-content-center text-white gap-4 reserveBtn2">
+                    <span>بیشتر
+                                                                                                                        بخوانید</span>
+                </a>
+            </div>
+            <div class="col-lg-8">
+                <!-- Swiper -->
+                <div class="swiper mySwiper2 py-5">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div>
+                                <div class="position-relative overflow-hidden bg-white shadow rounded-3 p-3 reserveCard">
+                                    <div class="position-relative overflow-hidden">
+                                        <img src="images/reserveThree.PNG" alt="reserveOne" class="w-100 rounded-3 reserveImg">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-bookmark saveSvg p-1 position-absolute" viewBox="0 0 16 16">
+                                                                                                                                                                                                                            <path
+                                                                                                                                                                                                                                                d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z" />
+                                                                                                                                                                                                        </svg>
+
+                                    </div>
+
+                                    <div class="d-flex align-items-center gap-2 mt-2">
+                                        <a class="fs-5">دارن
+                                                                                                                                                                                                                            الدر</a>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill text-success" viewBox="0 0 16 16">
+                                                                                                                                                                                                                            <path
+                                                                                                                                                                                                                                                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                                                                                                                                                                                                        </svg>
+                                    </div>
+                                    <p class="text-secondary">
+                                        MDS -پریودنتولوژی و ایمپلنت دهانی BDS
+                                    </p>
+                                    <div class="d-flex align-items-center gap-2 mb-3">
+                                        <div class="d-flex align-items-center gap-2 stars">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                                                                                                                                                                                                                <path
+                                                                                                                                                                                                                                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                                                                                                                                                                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                                                                                                                                                                                                                <path
+                                                                                                                                                                                                                                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                                                                                                                                                                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                                                                                                                                                                                                                <path
+                                                                                                                                                                                                                                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                                                                                                                                                                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                                                                                                                                                                                                                <path
+                                                                                                                                                                                                                                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                                                                                                                                                                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-star-fill text-secondary" viewBox="0 0 16 16">
+                                                                                                                                                                                                                                                <path
+                                                                                                                                                                                                                                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                                                                                                                                                                                            </svg>
+                                        </div>
+                                        <span>(22)</span>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-3 text-secondary mt-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                                                                                                                                                                                                            <path
+                                                                                                                                                                                                                                                d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                                                                                                                                                                                                        </svg>
+                                        <span>فلوریدا،
+                                                                                                                                                                                                                            آمریکا</span>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-3 text-secondary mt-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                                                                                                                                                                                                                            <path
+                                                                                                                                                                                                                                                d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z" />
+                                                                                                                                                                                                                            <path
+                                                                                                                                                                                                                                                d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z" />
+                                                                                                                                                                                                        </svg>
+                                        <span> در دسترس در جمعه
+                                                                                                                                                                                                                            ،
+                                                                                                                                                                                                                            22
+                                                                                                                                                                                                                            مهر
+                                                                                                                                                                                                        </span>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-3 text-secondary mt-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cash" viewBox="0 0 16 16">
+                                                                                                                                                                                                                            <path
+                                                                                                                                                                                                                                                d="M8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4z" />
+                                                                                                                                                                                                                            <path
+                                                                                                                                                                                                                                                d="M0 4a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V4zm3 0a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2V6a2 2 0 0 1-2-2H3z" />
+                                                                                                                                                                                                        </svg>
+                                        <span> 100 تومان - 300
+                                                                                                                                                                                                                            تومان
+                                                                                                                                                                                                        </span>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-center gap-2">
+                                        <a class="rounded-3 w-50 mt-4 py-2 mt-3 fs-5 d-flex align-items-center justify-content-center gap-4 reserveBtnOutline">
+                                            <span>مشاهده
+                                                                                                                                                                                                                                                پروفایل</span>
+                                        </a>
+                                        <a class="rounded-3 w-50 mt-4 py-2 px-2 mt-3 fs-5 d-flex align-items-center justify-content-center text-white gap-4 reserveBtn">
+                                            <span>رزرو
+                                                                                                                                                                                                                                                کنید</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div>
+                                <div class="position-relative overflow-hidden bg-white shadow rounded-3 p-3 reserveCard">
+                                    <div class="position-relative overflow-hidden">
+                                        <img src="images/reserveOne.PNG" alt="reserveOne" class="w-100 rounded-3 reserveImg">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-bookmark saveSvg p-1 position-absolute" viewBox="0 0 16 16">
+                                                                                                                                                                                                                            <path
+                                                                                                                                                                                                                                                d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z" />
+                                                                                                                                                                                                        </svg>
+
+                                    </div>
+
+                                    <div class="d-flex align-items-center gap-2 mt-2">
+                                        <a class="fs-5">دارن
+                                                                                                                                                                                                                            الدر</a>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill text-success" viewBox="0 0 16 16">
+                                                                                                                                                                                                                            <path
+                                                                                                                                                                                                                                                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                                                                                                                                                                                                        </svg>
+                                    </div>
+                                    <p class="text-secondary">
+                                        MDS -پریودنتولوژی و ایمپلنت دهانی BDS
+                                    </p>
+                                    <div class="d-flex align-items-center gap-2 mb-3">
+                                        <div class="d-flex align-items-center gap-2 stars">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                                                                                                                                                                                                                <path
+                                                                                                                                                                                                                                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                                                                                                                                                                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                                                                                                                                                                                                                <path
+                                                                                                                                                                                                                                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                                                                                                                                                                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                                                                                                                                                                                                                <path
+                                                                                                                                                                                                                                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                                                                                                                                                                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                                                                                                                                                                                                                <path
+                                                                                                                                                                                                                                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                                                                                                                                                                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-star-fill text-secondary" viewBox="0 0 16 16">
+                                                                                                                                                                                                                                                <path
+                                                                                                                                                                                                                                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                                                                                                                                                                                            </svg>
+                                        </div>
+                                        <span>(22)</span>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-3 text-secondary mt-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                                                                                                                                                                                                            <path
+                                                                                                                                                                                                                                                d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                                                                                                                                                                                                        </svg>
+                                        <span>فلوریدا،
+                                                                                                                                                                                                                            آمریکا</span>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-3 text-secondary mt-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                                                                                                                                                                                                                            <path
+                                                                                                                                                                                                                                                d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z" />
+                                                                                                                                                                                                                            <path
+                                                                                                                                                                                                                                                d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z" />
+                                                                                                                                                                                                        </svg>
+                                        <span> در دسترس در جمعه
+                                                                                                                                                                                                                            ،
+                                                                                                                                                                                                                            22
+                                                                                                                                                                                                                            مهر
+                                                                                                                                                                                                        </span>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-3 text-secondary mt-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cash" viewBox="0 0 16 16">
+                                                                                                                                                                                                                            <path
+                                                                                                                                                                                                                                                d="M8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4z" />
+                                                                                                                                                                                                                            <path
+                                                                                                                                                                                                                                                d="M0 4a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V4zm3 0a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2V6a2 2 0 0 1-2-2H3z" />
+                                                                                                                                                                                                        </svg>
+                                        <span> 100 تومان - 300
+                                                                                                                                                                                                                            تومان
+                                                                                                                                                                                                        </span>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-center gap-2">
+                                        <a class="rounded-3 w-50 mt-4 py-2 mt-3 fs-5 d-flex align-items-center justify-content-center gap-4 reserveBtnOutline">
+                                            <span>مشاهده
+                                                                                                                                                                                                                                                پروفایل</span>
+                                        </a>
+                                        <a class="rounded-3 w-50 mt-4 py-2 px-2 mt-3 fs-5 d-flex align-items-center justify-content-center text-white gap-4 reserveBtn">
+                                            <span>رزرو
+                                                                                                                                                                                                                                                کنید</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div>
+                                <div class="position-relative overflow-hidden bg-white shadow rounded-3 p-3 reserveCard">
+                                    <div class="position-relative overflow-hidden">
+                                        <img src="images/reserveTwo.PNG" alt="reserveOne" class="w-100 rounded-3 reserveImg">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-bookmark saveSvg p-1 position-absolute" viewBox="0 0 16 16">
+                                                                                                                                                                                                                            <path
+                                                                                                                                                                                                                                                d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z" />
+                                                                                                                                                                                                        </svg>
+
+                                    </div>
+
+                                    <div class="d-flex align-items-center gap-2 mt-2">
+                                        <a class="fs-5">دارن
+                                                                                                                                                                                                                            الدر</a>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill text-success" viewBox="0 0 16 16">
+                                                                                                                                                                                                                            <path
+                                                                                                                                                                                                                                                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                                                                                                                                                                                                        </svg>
+                                    </div>
+                                    <p class="text-secondary">
+                                        MDS -پریودنتولوژی و ایمپلنت دهانی BDS
+                                    </p>
+                                    <div class="d-flex align-items-center gap-2 mb-3">
+                                        <div class="d-flex align-items-center gap-2 stars">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                                                                                                                                                                                                                <path
+                                                                                                                                                                                                                                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                                                                                                                                                                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                                                                                                                                                                                                                <path
+                                                                                                                                                                                                                                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                                                                                                                                                                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                                                                                                                                                                                                                <path
+                                                                                                                                                                                                                                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                                                                                                                                                                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                                                                                                                                                                                                                <path
+                                                                                                                                                                                                                                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                                                                                                                                                                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-star-fill text-secondary" viewBox="0 0 16 16">
+                                                                                                                                                                                                                                                <path
+                                                                                                                                                                                                                                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                                                                                                                                                                                            </svg>
+                                        </div>
+                                        <span>(22)</span>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-3 text-secondary mt-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                                                                                                                                                                                                            <path
+                                                                                                                                                                                                                                                d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                                                                                                                                                                                                        </svg>
+                                        <span>فلوریدا،
+                                                                                                                                                                                                                            آمریکا</span>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-3 text-secondary mt-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                                                                                                                                                                                                                            <path
+                                                                                                                                                                                                                                                d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z" />
+                                                                                                                                                                                                                            <path
+                                                                                                                                                                                                                                                d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z" />
+                                                                                                                                                                                                        </svg>
+                                        <span> در دسترس در جمعه
+                                                                                                                                                                                                                            ،
+                                                                                                                                                                                                                            22
+                                                                                                                                                                                                                            مهر
+                                                                                                                                                                                                        </span>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-3 text-secondary mt-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cash" viewBox="0 0 16 16">
+                                                                                                                                                                                                                            <path
+                                                                                                                                                                                                                                                d="M8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4z" />
+                                                                                                                                                                                                                            <path
+                                                                                                                                                                                                                                                d="M0 4a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V4zm3 0a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2V6a2 2 0 0 1-2-2H3z" />
+                                                                                                                                                                                                        </svg>
+                                        <span> 100 تومان - 300
+                                                                                                                                                                                                                            تومان
+                                                                                                                                                                                                        </span>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-center gap-2">
+                                        <a class="rounded-3 w-50 mt-4 py-2 mt-3 fs-5 d-flex align-items-center justify-content-center gap-4 reserveBtnOutline">
+                                            <span>مشاهده
+                                                                                                                                                                                                                                                پروفایل</span>
+                                        </a>
+                                        <a class="rounded-3 w-50 mt-4 py-2 px-2 mt-3 fs-5 d-flex align-items-center justify-content-center text-white gap-4 reserveBtn">
+                                            <span>رزرو
+                                                                                                                                                                                                                                                کنید</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div>
+                                <div class="position-relative overflow-hidden bg-white shadow rounded-3 p-3 reserveCard">
+                                    <div class="position-relative overflow-hidden">
+                                        <img src="images/reserveThree.PNG" alt="reserveOne" class="w-100 rounded-3 reserveImg">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-bookmark saveSvg p-1 position-absolute" viewBox="0 0 16 16">
+                                                                                                                                                                                                                            <path
+                                                                                                                                                                                                                                                d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z" />
+                                                                                                                                                                                                        </svg>
+
+                                    </div>
+
+                                    <div class="d-flex align-items-center gap-2 mt-2">
+                                        <a class="fs-5">دارن
+                                                                                                                                                                                                                            الدر</a>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill text-success" viewBox="0 0 16 16">
+                                                                                                                                                                                                                            <path
+                                                                                                                                                                                                                                                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                                                                                                                                                                                                        </svg>
+                                    </div>
+                                    <p class="text-secondary">
+                                        MDS -پریودنتولوژی و ایمپلنت دهانی BDS
+                                    </p>
+                                    <div class="d-flex align-items-center gap-2 mb-3">
+                                        <div class="d-flex align-items-center gap-2 stars">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                                                                                                                                                                                                                <path
+                                                                                                                                                                                                                                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                                                                                                                                                                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                                                                                                                                                                                                                <path
+                                                                                                                                                                                                                                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                                                                                                                                                                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                                                                                                                                                                                                                <path
+                                                                                                                                                                                                                                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                                                                                                                                                                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                                                                                                                                                                                                                <path
+                                                                                                                                                                                                                                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                                                                                                                                                                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-star-fill text-secondary" viewBox="0 0 16 16">
+                                                                                                                                                                                                                                                <path
+                                                                                                                                                                                                                                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                                                                                                                                                                                            </svg>
+                                        </div>
+                                        <span>(22)</span>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-3 text-secondary mt-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                                                                                                                                                                                                            <path
+                                                                                                                                                                                                                                                d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                                                                                                                                                                                                        </svg>
+                                        <span>فلوریدا،
+                                                                                                                                                                                                                            آمریکا</span>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-3 text-secondary mt-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                                                                                                                                                                                                                            <path
+                                                                                                                                                                                                                                                d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z" />
+                                                                                                                                                                                                                            <path
+                                                                                                                                                                                                                                                d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z" />
+                                                                                                                                                                                                        </svg>
+                                        <span> در دسترس در جمعه
+                                                                                                                                                                                                                            ،
+                                                                                                                                                                                                                            22
+                                                                                                                                                                                                                            مهر
+                                                                                                                                                                                                        </span>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-3 text-secondary mt-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cash" viewBox="0 0 16 16">
+                                                                                                                                                                                                                            <path
+                                                                                                                                                                                                                                                d="M8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4z" />
+                                                                                                                                                                                                                            <path
+                                                                                                                                                                                                                                                d="M0 4a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V4zm3 0a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2V6a2 2 0 0 1-2-2H3z" />
+                                                                                                                                                                                                        </svg>
+                                        <span> 100 تومان - 300
+                                                                                                                                                                                                                            تومان
+                                                                                                                                                                                                        </span>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-center gap-2">
+                                        <a class="rounded-3 w-50 mt-4 py-2 mt-3 fs-5 d-flex align-items-center justify-content-center gap-4 reserveBtnOutline">
+                                            <span>مشاهده
+                                                                                                                                                                                                                                                پروفایل</span>
+                                        </a>
+                                        <a class="rounded-3 w-50 mt-4 py-2 px-2 mt-3 fs-5 d-flex align-items-center justify-content-center text-white gap-4 reserveBtn">
+                                            <span>رزرو
+                                                                                                                                                                                                                                                کنید</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div>
+                                <div class="position-relative overflow-hidden bg-white shadow rounded-3 p-3 reserveCard">
+                                    <div class="position-relative overflow-hidden">
+                                        <img src="images/reserveOne.PNG" alt="reserveOne" class="w-100 rounded-3 reserveImg">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-bookmark saveSvg p-1 position-absolute" viewBox="0 0 16 16">
+                                                                                                                                                                                                                            <path
+                                                                                                                                                                                                                                                d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z" />
+                                                                                                                                                                                                        </svg>
+
+                                    </div>
+
+                                    <div class="d-flex align-items-center gap-2 mt-2">
+                                        <a class="fs-5">دارن
+                                                                                                                                                                                                                            الدر</a>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle-fill text-success" viewBox="0 0 16 16">
+                                                                                                                                                                                                                            <path
+                                                                                                                                                                                                                                                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                                                                                                                                                                                                        </svg>
+                                    </div>
+                                    <p class="text-secondary">
+                                        MDS -پریودنتولوژی و ایمپلنت دهانی BDS
+                                    </p>
+                                    <div class="d-flex align-items-center gap-2 mb-3">
+                                        <div class="d-flex align-items-center gap-2 stars">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                                                                                                                                                                                                                <path
+                                                                                                                                                                                                                                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                                                                                                                                                                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                                                                                                                                                                                                                <path
+                                                                                                                                                                                                                                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                                                                                                                                                                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                                                                                                                                                                                                                <path
+                                                                                                                                                                                                                                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                                                                                                                                                                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                                                                                                                                                                                                                <path
+                                                                                                                                                                                                                                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                                                                                                                                                                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-star-fill text-secondary" viewBox="0 0 16 16">
+                                                                                                                                                                                                                                                <path
+                                                                                                                                                                                                                                                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                                                                                                                                                                                                            </svg>
+                                        </div>
+                                        <span>(22)</span>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-3 text-secondary mt-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                                                                                                                                                                                                            <path
+                                                                                                                                                                                                                                                d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                                                                                                                                                                                                        </svg>
+                                        <span>فلوریدا،
+                                                                                                                                                                                                                            آمریکا</span>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-3 text-secondary mt-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                                                                                                                                                                                                                            <path
+                                                                                                                                                                                                                                                d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z" />
+                                                                                                                                                                                                                            <path
+                                                                                                                                                                                                                                                d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z" />
+                                                                                                                                                                                                        </svg>
+                                        <span> در دسترس در جمعه
+                                                                                                                                                                                                                            ،
+                                                                                                                                                                                                                            22
+                                                                                                                                                                                                                            مهر
+                                                                                                                                                                                                        </span>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-3 text-secondary mt-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cash" viewBox="0 0 16 16">
+                                                                                                                                                                                                                            <path
+                                                                                                                                                                                                                                                d="M8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4z" />
+                                                                                                                                                                                                                            <path
+                                                                                                                                                                                                                                                d="M0 4a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V4zm3 0a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2V6a2 2 0 0 1-2-2H3z" />
+                                                                                                                                                                                                        </svg>
+                                        <span> 100 تومان - 300
+                                                                                                                                                                                                                            تومان
+                                                                                                                                                                                                        </span>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-center gap-2">
+                                        <a class="rounded-3 w-50 mt-4 py-2 mt-3 fs-5 d-flex align-items-center justify-content-center gap-4 reserveBtnOutline">
+                                            <span>مشاهده
+                                                                                                                                                                                                                                                پروفایل</span>
+                                        </a>
+                                        <a class="rounded-3 w-50 mt-4 py-2 px-2 mt-3 fs-5 d-flex align-items-center justify-content-center text-white gap-4 reserveBtn">
+                                            <span>رزرو
+                                                                                                                                                                                                                                                کنید</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next">
+                    </div>
+                    <div class="swiper-button-prev">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- panel -->
+
+    <section id="panel" class="p-4 p-lg-5 text-center wow fadeInUp">
+        <div class="row g-5 align-items-center">
+            <div class="col-xl-4">
+                <img src="images/panel-removebg-preview.png" alt="panel" class="img-fluid">
+            </div>
+            <div class="col-xl-8 fw-bold">
+                <h1 class="text-end">
+                    ویژگی موجود در پنل کاربری
+                </h1>
+                <p class="text-secondary text-end fs-5 mt-4">
+                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                </p>
+                <!-- Swiper -->
+                <div class="swiper mySwiper3 text-secondary py-5 my-5 mx-auto">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="position-relative mx-auto mb-4 rounded-circle overflow-hidden specialShadow2 bg-white d-flex justify-content-center align-items-center">
+                                <img src="images/panelOne.jpg" alt="" class="w-100 h-100">
+                            </div>
+                            <h5>بخش بیمار
+                            </h5>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="position-relative mx-auto mb-4 rounded-circle overflow-hidden specialShadow2 bg-white d-flex justify-content-center align-items-center">
+                                <img src="images/panelTwo.jpg" alt="" class="w-100 h-100">
+                            </div>
+                            <h5>مشاهده نوبت
+                            </h5>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="position-relative mx-auto mb-4 rounded-circle overflow-hidden specialShadow2 bg-white d-flex justify-content-center align-items-center">
+                                <img src="images/panelThree.jpg" alt="" class="w-100 h-100">
+                            </div>
+                            <h5>نوبت دهی
+                            </h5>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="position-relative mx-auto mb-4 rounded-circle overflow-hidden specialShadow2 bg-white d-flex justify-content-center align-items-center">
+                                <img src="images/panelOne.jpg" alt="" class="w-100 h-100">
+                            </div>
+                            <h5>بخش بیمار
+                            </h5>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination">
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- blog -->
+
+    <section id="blog" class="p-4 p-lg-5 fw-bold wow fadeInUp">
+        <h1 class="text-center">
+            بلاگ و اخبار
+        </h1>
+        <p class="text-secondary mx-auto text-center fs-5 mt-4">
+            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
+        </p>
+        <div class="row align-items-center mt-5 gap-3 gap-md-0">
+            <div class="col-xl-3 col-md-6 col-12 mb-5">
+                <div class="position-relative overflow-hidden bg-white shadow rounded-3 p-4 reserveCard w-100">
+                    <div class="position-relative overflow-hidden">
+                        <img src="images/reserveOne.PNG" alt="reserveOne" class="w-100 rounded-3 reserveImg">
+                    </div>
+
+                    <div class="d-flex align-items-center gap-2 mt-4">
+                        <img src="images/reserveOne.PNG" class="blogThumbnailImg rounded-circle">
+                        <a class="fs-5 text-secondary">پزشک،دارن
+                                                                                                                                            الدر</a>
+
+                    </div>
+                    <div class="d-flex align-items-center gap-2 text-secondary mt-3 mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                                                                                                                                            <path
+                                                                                                                                                                d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z" />
+                                                                                                                                            <path
+                                                                                                                                                                d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z" />
+                                                                                                                        </svg>
+                        <span>4 مهر
+                                                                                                                                            1401</span>
+                    </div>
+                    <h3>
+                        سوال - بازدید از کلینیک به راحتی
+                    </h3>
+                    <p class="mt-4 text-secondary fs-5">
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
+                    </p>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-6 col-12 mb-5">
+                <div class="position-relative overflow-hidden bg-white shadow rounded-3 p-4 reserveCard w-100">
+                    <div class="position-relative overflow-hidden">
+                        <img src="images/reserveFour.PNG" alt="reserveOne" class="w-100 rounded-3 reserveImg">
+                    </div>
+
+                    <div class="d-flex align-items-center gap-2 mt-4">
+                        <img src="images/reserveTwo.PNG" class="blogThumbnailImg rounded-circle">
+                        <a class="fs-5 text-secondary">پزشک،دارن
+                                                                                                                                            الدر</a>
+
+                    </div>
+                    <div class="d-flex align-items-center gap-2 text-secondary mt-3 mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                                                                                                                                            <path
+                                                                                                                                                                d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z" />
+                                                                                                                                            <path
+                                                                                                                                                                d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z" />
+                                                                                                                        </svg>
+                        <span>4 مهر
+                                                                                                                                            1401</span>
+                    </div>
+                    <h3>
+                        سوال - بازدید از کلینیک به راحتی
+                    </h3>
+                    <p class="mt-4 text-secondary fs-5">
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
+                    </p>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-6 col-12 mb-5">
+                <div class="position-relative overflow-hidden bg-white shadow rounded-3 p-4 reserveCard w-100">
+                    <div class="position-relative overflow-hidden">
+                        <img src="images/reserveFive.PNG" alt="reserveOne" class="w-100 rounded-3 reserveImg">
+                    </div>
+
+                    <div class="d-flex align-items-center gap-2 mt-4">
+                        <img src="images/reserveThree.PNG" class="blogThumbnailImg rounded-circle">
+                        <a class="fs-5 text-secondary">پزشک،دارن
+                                                                                                                                            الدر</a>
+
+                    </div>
+                    <div class="d-flex align-items-center gap-2 text-secondary mt-3 mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                                                                                                                                            <path
+                                                                                                                                                                d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z" />
+                                                                                                                                            <path
+                                                                                                                                                                d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z" />
+                                                                                                                        </svg>
+                        <span>4 مهر
+                                                                                                                                            1401</span>
+                    </div>
+                    <h3>
+                        سوال - بازدید از کلینیک به راحتی
+                    </h3>
+                    <p class="mt-4 text-secondary fs-5">
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
+                    </p>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-6 col-12 mb-5">
+                <div class="position-relative overflow-hidden bg-white shadow rounded-3 p-4 reserveCard w-100">
+                    <div class="position-relative overflow-hidden">
+                        <img src="images/reserveSix.PNG" alt="reserveOne" class="w-100 rounded-3 reserveImg">
+                    </div>
+
+                    <div class="d-flex align-items-center gap-2 mt-4">
+                        <img src="images/reserveOne.PNG" class="blogThumbnailImg rounded-circle">
+                        <a class="fs-5 text-secondary">پزشک،دارن
+                                                                                                                                            الدر</a>
+
+                    </div>
+                    <div class="d-flex align-items-center gap-2 text-secondary mt-3 mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                                                                                                                                            <path
+                                                                                                                                                                d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z" />
+                                                                                                                                            <path
+                                                                                                                                                                d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z" />
+                                                                                                                        </svg>
+                        <span>4 مهر
+                                                                                                                                            1401</span>
+                    </div>
+                    <h3>
+                        سوال - بازدید از کلینیک به راحتی
+                    </h3>
+                    <p class="mt-4 text-secondary fs-5">
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
+                    </p>
+                </div>
+            </div>
+        </div>
+        <a class="fs-3 rounded-3 fs-bold text-white py-2 text-center mt-5 d-block mx-auto reserveBtn5">
+                                                            مشاهده همه
+                                        </a>
+    </section>
+
+    <!-- footer -->
+
+    <footer class="p-4 p-lg-5 text-white fw-bold fs-5">
+        <div class="row border-bottom border-primary pb-3 gap-5 gap-md-0 wow fadeInUp">
+            <div class="col-lg-3 col-md-6 col-12">
+                <img src="images/footerLogo.PNG" alt="logo" class="img-fluid">
+                <p class="mt-4">
+                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
+                </p>
+                <div class="d-flex align-items-center gap-4 footerSocial">
+                    <a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                                                                                                                                            <path
+                                                                                                                                                                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                                                                                                                        </svg>
+                    </a>
+                    <a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                                                                                                                                            <path
+                                                                                                                                                                d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                                                                                                                        </svg>
+                    </a>
+                    <a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                                                                                                                                            <path
+                                                                                                                                                                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                                                                                                                        </svg>
+                    </a>
+                    <a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                                                                                                                                            <path
+                                                                                                                                                                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                                                                                                                        </svg>
+                    </a>
+                    <a>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-globe" viewBox="0 0 16 16">
+                                                                                                                                            <path
+                                                                                                                                                                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z" />
+                                                                                                                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+                <h2>برای بیماران</h2>
+                <ul class="list-unstyled p-0 mt-4 lh-lg">
+                    <li>
+                        <a class="d-flex text-white align-items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-double-left" viewBox="0 0 16 16">
+                                                                                                                                                                <path fill-rule="evenodd"
+                                                                                                                                                                                    d="M8.354 1.646a.5.5 0 0 1 0 .708L2.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                                                                                                                                                                <path fill-rule="evenodd"
+                                                                                                                                                                                    d="M12.354 1.646a.5.5 0 0 1 0 .708L6.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                                                                                                                                            </svg>
+                            <span>جستجو
+                                                                                                                                                                پزشک</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="d-flex text-white align-items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-double-left" viewBox="0 0 16 16">
+                                                                                                                                                                <path fill-rule="evenodd"
+                                                                                                                                                                                    d="M8.354 1.646a.5.5 0 0 1 0 .708L2.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                                                                                                                                                                <path fill-rule="evenodd"
+                                                                                                                                                                                    d="M12.354 1.646a.5.5 0 0 1 0 .708L6.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                                                                                                                                            </svg>
+                            <span>ورود</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="d-flex text-white align-items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-double-left" viewBox="0 0 16 16">
+                                                                                                                                                                <path fill-rule="evenodd"
+                                                                                                                                                                                    d="M8.354 1.646a.5.5 0 0 1 0 .708L2.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                                                                                                                                                                <path fill-rule="evenodd"
+                                                                                                                                                                                    d="M12.354 1.646a.5.5 0 0 1 0 .708L6.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                                                                                                                                            </svg>
+                            <span>ثبت
+                                                                                                                                                                نام</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="d-flex text-white align-items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-double-left" viewBox="0 0 16 16">
+                                                                                                                                                                <path fill-rule="evenodd"
+                                                                                                                                                                                    d="M8.354 1.646a.5.5 0 0 1 0 .708L2.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                                                                                                                                                                <path fill-rule="evenodd"
+                                                                                                                                                                                    d="M12.354 1.646a.5.5 0 0 1 0 .708L6.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                                                                                                                                            </svg>
+                            <span>رزرو
+                                                                                                                                                                نوبت</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="d-flex text-white align-items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-double-left" viewBox="0 0 16 16">
+                                                                                                                                                                <path fill-rule="evenodd"
+                                                                                                                                                                                    d="M8.354 1.646a.5.5 0 0 1 0 .708L2.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                                                                                                                                                                <path fill-rule="evenodd"
+                                                                                                                                                                                    d="M12.354 1.646a.5.5 0 0 1 0 .708L6.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                                                                                                                                            </svg>
+                            <span>داشبورد مراجعه
+                                                                                                                                                                کننده</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+                <h2>برای پزشکان</h2>
+                <ul class="list-unstyled p-0 mt-4 lh-lg">
+                    <li>
+                        <a class="d-flex text-white align-items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-double-left" viewBox="0 0 16 16">
+                                                                                                                                                                <path fill-rule="evenodd"
+                                                                                                                                                                                    d="M8.354 1.646a.5.5 0 0 1 0 .708L2.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                                                                                                                                                                <path fill-rule="evenodd"
+                                                                                                                                                                                    d="M12.354 1.646a.5.5 0 0 1 0 .708L6.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                                                                                                                                            </svg>
+                            <span>نوبت
+                                                                                                                                                                دهی</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="d-flex text-white align-items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-double-left" viewBox="0 0 16 16">
+                                                                                                                                                                <path fill-rule="evenodd"
+                                                                                                                                                                                    d="M8.354 1.646a.5.5 0 0 1 0 .708L2.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                                                                                                                                                                <path fill-rule="evenodd"
+                                                                                                                                                                                    d="M12.354 1.646a.5.5 0 0 1 0 .708L6.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                                                                                                                                            </svg>
+                            <span>چت</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="d-flex text-white align-items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-double-left" viewBox="0 0 16 16">
+                                                                                                                                                                <path fill-rule="evenodd"
+                                                                                                                                                                                    d="M8.354 1.646a.5.5 0 0 1 0 .708L2.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                                                                                                                                                                <path fill-rule="evenodd"
+                                                                                                                                                                                    d="M12.354 1.646a.5.5 0 0 1 0 .708L6.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                                                                                                                                            </svg>
+                            <span>ورود</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="d-flex text-white align-items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-double-left" viewBox="0 0 16 16">
+                                                                                                                                                                <path fill-rule="evenodd"
+                                                                                                                                                                                    d="M8.354 1.646a.5.5 0 0 1 0 .708L2.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                                                                                                                                                                <path fill-rule="evenodd"
+                                                                                                                                                                                    d="M12.354 1.646a.5.5 0 0 1 0 .708L6.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                                                                                                                                            </svg>
+                            <span>ثبت
+                                                                                                                                                                نام</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="d-flex text-white align-items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-double-left" viewBox="0 0 16 16">
+                                                                                                                                                                <path fill-rule="evenodd"
+                                                                                                                                                                                    d="M8.354 1.646a.5.5 0 0 1 0 .708L2.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                                                                                                                                                                <path fill-rule="evenodd"
+                                                                                                                                                                                    d="M12.354 1.646a.5.5 0 0 1 0 .708L6.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+                                                                                                                                            </svg>
+                            <span>داشبورد پزشک
+                                                                                                                                                                کننده</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+                <h2>
+                    تماس با ما
+                </h2>
+                <a class="d-flex ps-4 align-items-center gap-4 text-white mt-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                                                                                                        <path
+                                                                                                                                            d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                                                                                                    </svg>
+                    <span>
+                                                                                                                        3556
+                                                                                                                        خیابان
+                                                                                                                        ساحل،
+                                                                                                                        سانفرانسیسکو,
+                                                                                                                        کالیفرنیا،
+                                                                                                                        94108
+                                                                                                    </span>
+                </a>
+                <a class="d-flex ps-4 align-items-center gap-4 text-white mt-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                                                                                                                        <path fill-rule="evenodd"
+                                                                                                                                            d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                                                                                                    </svg>
+                    <span>
+                                                                                                                        +1
+                                                                                                                        315
+                                                                                                                        369
+                                                                                                                        5943
+                                                                                                    </span>
+                </a>
+                <a class="d-flex ps-4 align-items-center gap-4 text-white mt-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                                                                                                                        <path
+                                                                                                                                            d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+                                                                                                    </svg>
+                    <span>
+                                                                                                                        doccure@example.com
+                                                                                                    </span>
+                </a>
+            </div>
+        </div>
+        <div class="d-flex preFooter flex-column flex-md-row gap-2 align-items-md-center align-items-start justify-content-between pt-5">
+            <p class="m-0">
+                © 1401 داک کیور. تمامی حقوق محفوظ است.
+            </p>
+            <div class="d-flex align-items-center gap-3">
+                <a>شرایط و ضوابط</a>
+                <span>|</span>
+                <a>حریم خصوصی</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 2,
+            spaceBetween: 4,
+            loop: true,
+            breakpoints: {
+                768: {
+                    slidesPerView: 3,
+                },
+                992: {
+                    slidesPerView: 4,
+                },
+                1200: {
+                    slidesPerView: 6,
+                }
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                dynamicBullets: true,
+            },
+        });
+        var swiper2 = new Swiper(".mySwiper2", {
+            slidesPerView: 1,
+            spaceBetween: 29,
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                },
+                1380: {
+                    slidesPerView: 3,
+                }
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+        var swiper3 = new Swiper(".mySwiper3", {
+            slidesPerView: 2,
+            loop: true,
+            breakpoints: {
+                992: {
+                    slidesPerView: 3,
+                }
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                dynamicBullets: true,
+            },
+        });
+    </script>
+    <script src="js/script.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
+</html>

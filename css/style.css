@@ -1,0 +1,323 @@
+body {
+  user-select: none;
+  font-family: "IRANSans";
+}
+@font-face {
+  font-family: "IRANSans";
+  src: url(../fonts/IRANSansXFaNum-Regular.woff) format("woff");
+}
+a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+#overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 97;
+  background-color: #0009;
+  display: none;
+}
+#hamIcon {
+  right: 9px;
+  top: 17px;
+  cursor: pointer;
+}
+nav .bg-primary {
+  transition: all 0.4s;
+  max-height: 0;
+  overflow: hidden;
+}
+nav .bg-primary.active {
+  max-height: 2000px;
+}
+#mobileMenu {
+  right: -444px;
+  width: 260px;
+  top: 0;
+  bottom: 0;
+  z-index: 99;
+  transition: all 0.7s;
+}
+#mobileMenu.active {
+  right: 0;
+}
+#closeIcon {
+  cursor: pointer;
+}
+header > a,
+header .desktopMenu a.active,
+header .desktopMenu li:hover,
+header .desktopMenu li a:hover,
+.reserveBtn:hover,
+.reserveBtn2:hover,
+.reserveBtn3:hover,
+.reserveBtn4:hover,
+.reserveBtn5:hover {
+  color: #9251d7 !important;
+}
+.dropdown {
+  width: 229px;
+  background-color: white;
+  top: 30px;
+  transition: all 0.4s;
+  display: none;
+}
+.dropdown.active {
+  display: block;
+}
+.dropdown::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border: 0 solid transparent;
+  border-right-width: 12px;
+  border-left-width: 12px;
+  border-bottom: 12px solid #9251d7;
+  position: relative;
+  top: -11px;
+  right: 33px;
+}
+.dropdown span,
+footer ul li span {
+  transition: all 0.4s;
+  display: block;
+}
+.dropdown a:hover span,
+footer ul li:hover span {
+  transform: translateX(-9px);
+}
+#banner {
+  background-image: url("../images/banner-removebg-preview.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-color: rgb(251, 251, 251);
+  padding: 70px 0;
+  height: 533px;
+}
+.reserveBtn,
+.reserveBtn2,
+.reserveBtn3,
+.reserveBtn4,
+.reserveBtn5 {
+  background-color: #9251d7;
+  width: 142px !important;
+  font-size: 17px !important;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid #9251d7;
+}
+.reserveBtn::before {
+  content: "رزرو کنید";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  transition: all 0.4s;
+  top: -63px;
+}
+.reserveBtn:hover::before,
+.reserveBtn2:hover::before,
+.reserveBtn3:hover::before,
+.reserveBtn4:hover::before,
+.reserveBtn5:hover::before,
+.reserveBtnOutline:hover::before {
+  top: 0;
+}
+.reserveBtn2::before {
+  content: "بیشتر بخوانید";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  transition: all 0.4s;
+  top: -63px;
+}
+.reserveBtn3::before {
+  content: "جستجو";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  transition: all 0.4s;
+  top: -63px;
+}
+.reserveBtn4::before {
+  content: "بزودی";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  transition: all 0.4s;
+  top: -63px;
+}
+.reserveBtn5::before {
+  content: "مشاهده همه";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  transition: all 0.4s;
+  top: -63px;
+}
+.reserveBtnOutline::before {
+  content: "مشاهده پروفایل";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #9251d7;
+  transition: all 0.4s;
+  top: -63px;
+}
+.reserveBtnOutline {
+  border: 2px solid #9251d7;
+  color: #9251d7;
+  width: 142px !important;
+  background-color: white;
+  font-size: 17px !important;
+  overflow: hidden;
+  position: relative;
+}
+.reserveBtnOutline:hover,
+#mobileMenu a {
+  color: white;
+}
+#services,
+#reserve,
+#blog {
+  background-color: rgb(251, 251, 251);
+}
+.cardItem > div {
+  background-color: #21252985 !important;
+}
+.cardItem img {
+  width: 420px;
+  height: 259px;
+  transition: all 0.4s;
+}
+.cardItem:hover img {
+  transform: scale(1.1);
+}
+#departemans p,
+#blog p {
+  max-width: 592px;
+}
+.specialShadow {
+  box-shadow: 0 0 21px #79767633;
+  width: 144px;
+  height: 144px;
+}
+.specialShadow2 {
+  box-shadow: 0 0 21px #797676;
+  width: 144px;
+  height: 144px;
+}
+.dot {
+  width: 24px;
+  height: 24px;
+  background-color: #9251d7;
+  border-radius: 50%;
+  border: 5px solid white;
+  box-shadow: 0 0 9px lightgray;
+  position: absolute;
+  right: 8px;
+  bottom: 12px;
+}
+.swiper-horizontal.swiper-rtl
+  > .swiper-pagination-bullets-dynamic
+  .swiper-pagination-bullet,
+:host(.swiper-horizontal.swiper-rtl)
+  .swiper-pagination-bullets-dynamic
+  .swiper-pagination-bullet {
+  background-color: #9251d7 !important;
+  width: 20px !important;
+  height: 5px !important;
+  border-radius: 0;
+}
+.stars svg {
+  color: rgb(230, 168, 14);
+}
+.reserveCard,
+.saveSvg,
+.reserveImg,
+.footerSocial a svg {
+  transition: all 0.4s;
+}
+.reserveCard:hover .saveSvg {
+  left: 14px;
+}
+#blog .reserveCard {
+  width: 20%;
+}
+.saveSvg {
+  left: -100px;
+  top: 14px;
+  cursor: pointer;
+  background-color: white;
+}
+.saveSvg:hover {
+  background-color: red;
+  color: white;
+}
+.reserveImg:hover {
+  transform: scale(1.1);
+}
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next,
+.swiper-rtl .swiper-button-prev {
+  background-color: white;
+  box-shadow: 0 0 22px lightgray;
+  border-radius: 95px;
+  width: 44px;
+  height: 44px;
+}
+.swiper-button-prev::after,
+.swiper-button-next::after,
+.footerSocial a:hover svg,
+.preFooter a:hover {
+  font-size: 20px !important;
+  color: #9251d7 !important;
+}
+.blogThumbnailImg {
+  width: 29px;
+  height: 29px;
+}
+footer,
+nav {
+  background-color: #15558d;
+}
+@media (max-width: 1400px) {
+  .mySwiper,
+  .mySwiper2 {
+    width: 90% !important;
+  }
+}
+@media (max-width: 576px) {
+  #banner {
+    background-image: none;
+  }
+  #departemans p,
+  #blog p {
+    max-width: 94%;
+  }
+}
